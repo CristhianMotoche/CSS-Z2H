@@ -23,5 +23,5 @@
 
 #wings {
   border: 10px dashed rgb(150, 13, 0, 0.7);
-  margin: 0 100px 0 100px; /* Top, Right, Bottom, Left */
+  margin: 10px 100px; /* Top & Bottom,  Right & Left */
 }
