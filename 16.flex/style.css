@@ -1,0 +1,30 @@
+/* Flexbox is divided in two things:
+
+Container:
+- Element that organizes items. Usually a div.
+
+Items:
+- Elements inside the contanser. Any children of the container.
+
+*/
+
+#container {
+  /* The container needs the display: flex */
+  display: flex;
+
+  /* We can organize the direction: using flex-direction in the container*/
+  flex-direction: row; /* other options: column-reverse, row, row-reverse */
+
+  /* We can organize how elements are wrapped using: flex-wrap in the container */
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: steelblue;
+  margin: 20px;
+  height: 1rem;
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+}
+
