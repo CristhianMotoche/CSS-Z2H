@@ -9,6 +9,9 @@ Items:
 */
 
 #container {
+  background-color: #999;
+  height: 40rem;
+
   /* The container needs the display: flex */
   display: flex;
 
@@ -17,6 +20,12 @@ Items:
 
   /* We can organize how elements are wrapped using: flex-wrap in the container */
   flex-wrap: wrap;
+
+  /* We can align elements horizontally using: justify content */
+  justify-content: center; /* other values: flex-end, flex-start */
+
+  /* We can align elements vertically using: justify content */
+  align-items: center; /* other values: flex-end, flex-start */
 }
 
 .item {
@@ -28,3 +37,27 @@ Items:
   padding: 20px;
 }
 
+.elem1 {
+  order: 3;
+  flex-basis: 100px;
+}
+
+.elem2 {
+  order: 1;
+  flex-grow: 3;
+}
+
+.elem3 {
+  order: 5;
+  flex-shrink: 3;
+}
+
+.elem4 {
+  order: 2;
+  align-self: flex-start;
+}
+
+.elem5 {
+  order: 4;
+  flex: 1 2 100px; /* grow shrink basis */
+}
