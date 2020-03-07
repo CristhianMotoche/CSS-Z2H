@@ -30,6 +30,7 @@
 
 .elem1 {
   transition: background 1s linear;
+  transform: matrix(1, 1, 1, 0, 2, 2);
 }
 
 .elem1:hover {
@@ -38,6 +39,7 @@
 
 .elem2 {
   transition: padding 300ms ease;
+  transform: translate(40px);
 }
 
 .elem2:hover {
@@ -46,8 +48,10 @@
 
 .elem3 {
   transition: width 3s ease-in-out;
+  transform: rotate(45deg);
 }
 
 .elem3:hover {
   width: 50%;
+  transform: rotate(90deg);
 }
